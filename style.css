@@ -1,0 +1,127 @@
+:root {
+  --primary-color: #8B4513; /* 深棕色 */
+  --secondary-color: #A0522D; /* 土棕色 */
+  --accent-color: #FF4500; /* 橙红色 */
+  --text-color: #FFF8DC; /* 米白色 */
+  --light-text-color: #F4A460; /* 沙棕色 */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Rye&display=swap');
+
+body {
+  font-family: 'Rye', cursive;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: url('bg.jpg') center/cover no-repeat fixed;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  background-color: rgba(139, 69, 19, 0.9);
+  padding: 60px 0;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 5px solid var(--accent-color);
+}
+
+header h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 3rem;
+  margin: 0;
+  color: var(--text-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+  font-size: 1.5rem;
+  color: var(--light-text-color);
+  margin-top: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: rgba(160, 82, 45, 0.8);
+  border-radius: 8px;
+}
+
+h2 {
+  color: var(--accent-color);
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+li::before {
+  content: "🤠";
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: rgba(139, 69, 19, 0.9);
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 5px solid var(--accent-color);
+}
+
+footer p {
+  margin: 0;
+  color: var(--light-text-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  header {
+    padding: 40px 0;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  li {
+    font-size: 1rem;
+  }
+}
